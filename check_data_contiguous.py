@@ -4,8 +4,7 @@ from typing import Dict, List
 
 import pandas as pd
 
-data_path = Path('./data/stocks')
-time_format = '%Y-%m-%d'
+from src.consts import data_path, time_format
 
 
 def find_gaps(df:pd.DataFrame) -> List[Dict]:
